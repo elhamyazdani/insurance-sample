@@ -1,0 +1,42 @@
+@import '../../generic/color';
+
+.header {
+  padding: 10px;
+}
+
+#react-burger-menu-btn {
+  // width: 60px !important;
+  // height: 60px !important;
+  // right: 20px !important;
+  // left: auto !important;
+  // top: 70px !important;
+  box-shadow: none;
+}
+.bm-burger-button {
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  right: 34px;
+  top: 75px;
+  &:after {
+    content: '';
+    padding: 10px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    top: -17px;
+    left: -18px;
+    position: absolute;
+  }
+}
+.bm-burger-bars {
+  background: $primary_color;
+}
+.bm-cross-button {
+  #react-burger-cross-btn {
+    box-shadow: none;
+  }
+  .bm-cross {
+    background-color: $primary_color;
+  }
+}

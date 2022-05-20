@@ -1,0 +1,30 @@
+@import '../generic/color';
+
+.page {
+  background-color: $background;
+  .main-container {
+    min-height: 100vh;
+    grid-template-columns: 306px auto;
+    grid-template-rows: 87px auto;
+    border-radius: 20px;
+    .dashboard {
+      background-color: #fff;
+      box-shadow: 10px 3px 15px 0px rgba(0, 0, 0, 0.05);
+      grid-row: 1 / 3;
+      //  display: none;
+    }
+    .header {
+      background-color: #fff;
+      box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    }
+    .content {
+      grid-column: 2;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page .main-container {
+    display: grid;
+  }
+}

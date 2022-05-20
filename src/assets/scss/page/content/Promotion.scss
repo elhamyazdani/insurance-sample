@@ -1,0 +1,80 @@
+@import '../../generic/color';
+@import '../../generic/mixin';
+
+.promotion {
+  @include box;
+  padding: 0;
+  min-height: 310px;
+  position: relative;
+  background-color: #f8f9ff;
+  display: flex;
+  flex-direction: column-reverse;
+  .vector img {
+    max-width: 100%;
+  }
+  .detail {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    .title {
+      font-size: 33px;
+      font-weight: 600;
+      line-height: 44px;
+      text-align: center;
+    }
+    .code-wrapper {
+      display: flex;
+      gap: 15px;
+      line-height: 40px;
+      justify-content: center;
+      .code {
+        padding: 0 1em;
+        border: 1px dashed $main_font_color;
+        border-radius: 5px;
+        font-size: 22px;
+      }
+      .copy-link {
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+  .background {
+    position: absolute;
+    left: 0;
+    right: -3px;
+    bottom: 0;
+    padding: 14% 0;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promotion {
+    .vector img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: auto;
+    }
+    .detail {
+      width: 56%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      .code-wrapper {
+        padding-left: 5em;
+        justify-content: normal;
+      }
+    }
+  }
+}

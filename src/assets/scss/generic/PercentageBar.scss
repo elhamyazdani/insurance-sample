@@ -1,0 +1,20 @@
+@import './color';
+
+.percentage-bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background: $background_gradient;
+    .full-bar {  
+        width: 50%;
+        height: 100%;
+        background-color: $primary_color;
+        border-radius: 2px;
+    }
+    &.primary .full-bar {
+        background: $primary_gradient;
+    }
+    &.secondary .full-bar {
+        background: $secondary_gradient;
+    }
+}

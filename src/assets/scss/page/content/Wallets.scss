@@ -1,0 +1,11 @@
+.wallets {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .wallets {
+    flex-wrap: nowrap;
+  }
+}

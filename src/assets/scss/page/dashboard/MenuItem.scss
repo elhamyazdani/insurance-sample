@@ -1,0 +1,57 @@
+@import '../../generic/color';
+@import '../../generic/mixin';
+
+li.menu-item {
+  max-width: 160px;
+  margin: auto;
+  a {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    .icon-wrapper {
+      width: 30px;
+      height: 22px;
+      overflow: hidden;
+      .icon {
+        margin: 0;
+        @include transition(all 0.5s);
+        transition-delay: 0.15s;
+        img {
+          display: block;
+          width: auto;
+          height: 20px;
+          margin: auto auto 10px;
+        }
+      }
+    }
+    .title {
+      color: $menu_font_color;
+      line-height: 20px;
+      transition: 1s;
+      font-weight: 400;
+      @include transition(all 0.5s);
+      transition-delay: 0.15s;
+    }
+  }
+  &.active,
+  &:hover {
+    .icon-wrapper {
+      .icon {
+        margin-top: -30px;
+      }
+    }
+  }
+  &:hover {
+    .title {
+      color: $primary_color;
+      text-shadow: -0.2px -0.2px 0 $primary_color, 0.2px -0.2px 0 $primary_color,
+        -0.2px 0.2px 0 $primary_color, 0.2px 0.2px 0 $primary_color;
+    }
+  }
+  &.active {
+    .title {
+      color: $primary_color;
+      font-weight: 600;
+    }
+  }
+}

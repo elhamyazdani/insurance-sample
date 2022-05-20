@@ -1,0 +1,39 @@
+@import '../../generic/color';
+
+.header-menu {
+  padding: 10px;
+  ul {
+    display: flex;
+    li {
+      a {
+        display: block;
+        padding: 0px 14px;
+        line-height: 30px;
+      }
+      &.active a {
+        color: $primary_color;
+        font-weight: 600;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 16px;
+          height: 2px;
+          background: $primary_color;
+          border-radius: 1px;
+          position: absolute;
+          bottom: -2px;
+          right: 0;
+          left: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    padding: 20px;
+  }
+}

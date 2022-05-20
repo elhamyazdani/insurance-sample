@@ -1,0 +1,44 @@
+@import '../../generic/color';
+
+.intro {
+  padding: 10px;
+  .image-wrapper {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    margin-bottom: 10px;
+    background-image: $avatar_gradient;
+    border-radius: 100%;
+    overflow: hidden;
+    .image {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background-image: url('../../../images/avatar.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .name {
+    margin-bottom: 10px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 700;
+    color: $menu_hello_color;
+  }
+  .welcome {
+    margin-bottom: 10px;
+    color: $menu_hello_color;
+    font-size: 12px;
+  }
+  .plan {
+    margin-bottom: 20px;
+    color: $menu_hello_color;
+    span {
+      color: $secondary_color;
+    }
+  }
+}

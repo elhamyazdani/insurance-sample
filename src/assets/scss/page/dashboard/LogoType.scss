@@ -1,0 +1,31 @@
+.logo-type {
+  img {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  span {
+    // font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+  }
+}
+.dashboard .logo-type {
+  display: none;
+  padding: 10px;
+}
+
+.header .logo-type {
+  display: block;
+  padding: 10px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard .logo-type {
+    display: block;
+  }
+  .header .logo-type {
+    display: none;
+  }
+}

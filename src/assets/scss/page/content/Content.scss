@@ -1,0 +1,18 @@
+@import '../../generic/color';
+
+.content {
+  padding: 20px;
+  color: $main_font_color;
+  max-width: 980px;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content {
+    max-width: 1170px;
+  }
+}

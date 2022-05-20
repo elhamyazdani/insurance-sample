@@ -1,0 +1,11 @@
+@import './color';
+
+body {
+    font-family: 'Segoe UI';
+    background-color: $background;
+} 
+
+a, a:hover {
+    text-decoration: none;
+    color: $main-font-color;
+}
